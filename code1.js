@@ -449,7 +449,7 @@ gdjs.copyArray(runtimeScene.getObjects("ticket"), gdjs.HomeCode.GDticketObjects1
 }{for(var i = 0, len = gdjs.HomeCode.GDLOGOObjects1.length ;i < len;++i) {
     gdjs.HomeCode.GDLOGOObjects1[i].setCenterXInScene(gdjs.evtTools.window.getWindowInnerWidth() / 2);
 }
-}{gdjs.evtsExt__Iframe__Create.func(runtimeScene, "classifica", "/endgame.html", 720, 300, 0, 500, false, false, "", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{gdjs.evtsExt__Iframe__Create.func(runtimeScene, "classifica", "/funkoshooter/endgame.html", 720, 300, 0, 500, false, false, "", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }}
 
 }
