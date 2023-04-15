@@ -1,14 +1,16 @@
 //firebase needs thses to figure out on how we r connecting to database
 //configuring the app on the front end to link with our firebase which we created on website
 var firebaseConfig = {
-    apiKey: "AIzaSyC64nUlDTPRpGzxeXEDS-ZvtPlWQDvHQok",
-    authDomain: "edgerunners-254ec.firebaseapp.com",
-    projectId: "edgerunners-254ec",
-    storageBucket: "edgerunners-254ec.appspot.com",
-    messagingSenderId: "424078069040",
-    appId: "1:424078069040:web:226d4ba674167cb95a4cf5",
-    measurementId: "G-5YGWZR0X2X"
+    apiKey: "AIzaSyBGO_YJMMtO23swkn9oWjj2iArgkK6l3UQ",
+    authDomain: "funkoshooter-42a9f.firebaseapp.com",
+    projectId: "funkoshooter-42a9f",
+    storageBucket: "funkoshooter-42a9f.appspot.com",
+    messagingSenderId: "1079368324387",
+    appId: "1:1079368324387:web:263fb7aa5f1e0c155fe896",
+    measurementId: "G-J0ZC08KGNS"
 };
+
+
 
 // Initialize Firebase
 

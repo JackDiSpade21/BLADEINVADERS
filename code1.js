@@ -109,7 +109,7 @@ gdjs.copyArray(runtimeScene.getObjects("bentornato"), gdjs.HomeCode.GDbentornato
     gdjs.HomeCode.GDbentornatoObjects1[i].setBBText("[color=red]" + "[outline=black]" + "[align=center]" + "[b]" + "Bentornato " + "[color=black]" + "[outline=red]" + gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().getFromIndex(1)) + "[/color]" + "[/outline]" + "." + "[/align]" + "[align=center]" + gdjs.evtTools.string.newLine() + "[b]" + "Il tuo record è " + "[color=black]" + "[outline=red]" + gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(2))) + "[/color]" + "[/outline]" + "[color=red]" + "[outline=black]" + "." + "[/b]" + "[/align]" + "[/outline]" + "[/color]");
 }
 }{for(var i = 0, len = gdjs.HomeCode.GDbentornatoObjects1.length ;i < len;++i) {
-    gdjs.HomeCode.GDbentornatoObjects1[i].setCenterXInScene(gdjs.evtTools.window.getWindowInnerWidth() / 2);
+    gdjs.HomeCode.GDbentornatoObjects1[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2);
 }
 }}
 
@@ -429,27 +429,27 @@ gdjs.copyArray(runtimeScene.getObjects("istruzioni"), gdjs.HomeCode.GDistruzioni
 gdjs.copyArray(runtimeScene.getObjects("ticket"), gdjs.HomeCode.GDticketObjects1);
 {firebase.analytics();
 }{for(var i = 0, len = gdjs.HomeCode.GDNewTextInputObjects1.length ;i < len;++i) {
-    gdjs.HomeCode.GDNewTextInputObjects1[i].setCenterXInScene(gdjs.evtTools.window.getWindowInnerWidth() / 2);
+    gdjs.HomeCode.GDNewTextInputObjects1[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2);
 }
 }{for(var i = 0, len = gdjs.HomeCode.GDistruzioniObjects1.length ;i < len;++i) {
-    gdjs.HomeCode.GDistruzioniObjects1[i].setCenterXInScene(gdjs.evtTools.window.getWindowInnerWidth() / 2);
+    gdjs.HomeCode.GDistruzioniObjects1[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2);
 }
 }{for(var i = 0, len = gdjs.HomeCode.GDbentornatoObjects1.length ;i < len;++i) {
-    gdjs.HomeCode.GDbentornatoObjects1[i].setCenterXInScene(gdjs.evtTools.window.getWindowInnerWidth() / 2);
+    gdjs.HomeCode.GDbentornatoObjects1[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2);
 }
 }{for(var i = 0, len = gdjs.HomeCode.GDcambiaObjects1.length ;i < len;++i) {
-    gdjs.HomeCode.GDcambiaObjects1[i].setCenterXInScene(gdjs.evtTools.window.getWindowInnerWidth() / 2);
+    gdjs.HomeCode.GDcambiaObjects1[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2);
 }
 }{for(var i = 0, len = gdjs.HomeCode.GDGIOCAObjects1.length ;i < len;++i) {
-    gdjs.HomeCode.GDGIOCAObjects1[i].setCenterXInScene(gdjs.evtTools.window.getWindowInnerWidth() / 2);
+    gdjs.HomeCode.GDGIOCAObjects1[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2);
 }
 }{for(var i = 0, len = gdjs.HomeCode.GDticketObjects1.length ;i < len;++i) {
-    gdjs.HomeCode.GDticketObjects1[i].setCenterXInScene(gdjs.evtTools.window.getWindowInnerWidth() / 2);
+    gdjs.HomeCode.GDticketObjects1[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2);
 }
 }{for(var i = 0, len = gdjs.HomeCode.GDLOGOObjects1.length ;i < len;++i) {
-    gdjs.HomeCode.GDLOGOObjects1[i].setCenterXInScene(gdjs.evtTools.window.getWindowInnerWidth() / 2);
+    gdjs.HomeCode.GDLOGOObjects1[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2);
 }
-}{gdjs.evtsExt__Iframe__Create.func(runtimeScene, "classifica", "/funkoshooter/endgame.html", 720, 300, 0, 500, false, false, "", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{gdjs.evtsExt__Iframe__Create.func(runtimeScene, "classifica", "/funkoshooter/endgame.html", 400, 260, 0, 380, false, false, "", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }}
 
 }
