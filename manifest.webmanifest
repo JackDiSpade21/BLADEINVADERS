@@ -1,0 +1,12 @@
+{
+  "name": "Blade Invaders",
+  "short_name": "Blade Invaders",
+  "id": "io.satellite.bladeinvaders",
+  "description": "",
+  "orientation": "portrait",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "black",
+  "categories": ["games", "entertainment"],
+  "icons": []
+}
