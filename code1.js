@@ -102,21 +102,25 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.storage.elementExistsInJSONFile("Memoria", "name");
 }
 if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("NewTextInput"), gdjs.HomeCode.GDNewTextInputObjects1);
 gdjs.copyArray(runtimeScene.getObjects("bentornato"), gdjs.HomeCode.GDbentornatoObjects1);
-{gdjs.evtTools.camera.hideLayer(runtimeScene, "nuovo utente");
-}{gdjs.evtTools.camera.showLayer(runtimeScene, "esistente");
+{gdjs.evtTools.camera.showLayer(runtimeScene, "esistente");
+}{gdjs.evtTools.camera.hideLayer(runtimeScene, "nuovo utente");
 }{for(var i = 0, len = gdjs.HomeCode.GDbentornatoObjects1.length ;i < len;++i) {
     gdjs.HomeCode.GDbentornatoObjects1[i].setBBText("[color=red]" + "[outline=black]" + "[align=center]" + "[b]" + "Bentornato " + "[color=black]" + "[outline=red]" + gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().getFromIndex(1)) + "[/color]" + "[/outline]" + "." + "[/align]" + "[align=center]" + gdjs.evtTools.string.newLine() + "[b]" + "Il tuo record è " + "[color=black]" + "[outline=red]" + gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(2))) + "[/color]" + "[/outline]" + "[color=red]" + "[outline=black]" + "." + "[/b]" + "[/align]" + "[/outline]" + "[/color]");
 }
 }{for(var i = 0, len = gdjs.HomeCode.GDbentornatoObjects1.length ;i < len;++i) {
     gdjs.HomeCode.GDbentornatoObjects1[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2);
 }
+}{for(var i = 0, len = gdjs.HomeCode.GDNewTextInputObjects1.length ;i < len;++i) {
+    gdjs.HomeCode.GDNewTextInputObjects1[i].setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().getFromIndex(1)));
+}
 }}
 
 }
 
 
-};gdjs.HomeCode.asyncCallback17934412 = function (runtimeScene, asyncObjectsList) {
+};gdjs.HomeCode.asyncCallback16194604 = function (runtimeScene, asyncObjectsList) {
 }
 gdjs.HomeCode.eventsList1 = function(runtimeScene) {
 
@@ -126,7 +130,7 @@ gdjs.HomeCode.eventsList1 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.3), (runtimeScene) => (gdjs.HomeCode.asyncCallback17934412(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.3), (runtimeScene) => (gdjs.HomeCode.asyncCallback16194604(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -232,7 +236,7 @@ gdjs.HomeCode.eventsList3(runtimeScene, asyncObjectsList);} //End of subevents
 }
 
 
-};gdjs.HomeCode.asyncCallback17931460 = function (runtimeScene, asyncObjectsList) {
+};gdjs.HomeCode.asyncCallback16213588 = function (runtimeScene, asyncObjectsList) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Gioco", true);
 }
 { //Subevents
@@ -246,7 +250,7 @@ gdjs.HomeCode.eventsList5 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.8), (runtimeScene) => (gdjs.HomeCode.asyncCallback17931460(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.8), (runtimeScene) => (gdjs.HomeCode.asyncCallback16213588(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -278,7 +282,7 @@ for (var i = 0, k = 0, l = gdjs.HomeCode.GDGIOCAObjects2.length;i<l;++i) {
 gdjs.HomeCode.GDGIOCAObjects2.length = k;
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("NewTextInput"), gdjs.HomeCode.GDNewTextInputObjects2);
-{gdjs.evtTools.firebaseTools.analytics.log("partite giocate", "");
+{gdjs.evtTools.firebaseTools.analytics.log("partite giocate (Da home)", "");
 }{runtimeScene.getGame().getVariables().get("name").setString((( gdjs.HomeCode.GDNewTextInputObjects2.length === 0 ) ? "" :gdjs.HomeCode.GDNewTextInputObjects2[0].getString()));
 }{runtimeScene.getGame().getVariables().get("name").setString(gdjs.evtsExt__InputValidation__ToAlphanumerical.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().get("name")), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
 }{gdjs.evtsExt__Iframe__Delete.func(runtimeScene, "classifica", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
@@ -449,7 +453,7 @@ gdjs.copyArray(runtimeScene.getObjects("ticket"), gdjs.HomeCode.GDticketObjects1
 }{for(var i = 0, len = gdjs.HomeCode.GDLOGOObjects1.length ;i < len;++i) {
     gdjs.HomeCode.GDLOGOObjects1[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2);
 }
-}{gdjs.evtsExt__Iframe__Create.func(runtimeScene, "classifica", "/funkoshooter/endgame.html", 400, 260, 0, 380, false, false, "", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{gdjs.evtsExt__Iframe__Create.func(runtimeScene, "classifica", "/BladeInvaders/endgame.html", 400, 260, 0, 380, false, false, "", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }}
 
 }
@@ -471,7 +475,7 @@ for (var i = 0, k = 0, l = gdjs.HomeCode.GDticketObjects1.length;i<l;++i) {
 gdjs.HomeCode.GDticketObjects1.length = k;
 if (isConditionTrue_0) {
 {gdjs.evtTools.firebaseTools.analytics.log("click su ticket", "");
-}{gdjs.evtsExt__URLTools__Redirect.func(runtimeScene, "https://www.youtube.com/watch?v=dQw4w9WgXcQ", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{gdjs.evtsExt__URLTools__Redirect.func(runtimeScene, "https://www.eventbrite.it/e/608671311277", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }}
 
 }
