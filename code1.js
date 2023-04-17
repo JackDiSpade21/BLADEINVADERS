@@ -11,6 +11,14 @@ gdjs.HomeCode.GDistruzioniObjects1= [];
 gdjs.HomeCode.GDistruzioniObjects2= [];
 gdjs.HomeCode.GDistruzioniObjects3= [];
 gdjs.HomeCode.GDistruzioniObjects4= [];
+gdjs.HomeCode.GDmusicObjects1= [];
+gdjs.HomeCode.GDmusicObjects2= [];
+gdjs.HomeCode.GDmusicObjects3= [];
+gdjs.HomeCode.GDmusicObjects4= [];
+gdjs.HomeCode.GDlucasObjects1= [];
+gdjs.HomeCode.GDlucasObjects2= [];
+gdjs.HomeCode.GDlucasObjects3= [];
+gdjs.HomeCode.GDlucasObjects4= [];
 gdjs.HomeCode.GDbentornatoObjects1= [];
 gdjs.HomeCode.GDbentornatoObjects2= [];
 gdjs.HomeCode.GDbentornatoObjects3= [];
@@ -31,6 +39,10 @@ gdjs.HomeCode.GDticketObjects1= [];
 gdjs.HomeCode.GDticketObjects2= [];
 gdjs.HomeCode.GDticketObjects3= [];
 gdjs.HomeCode.GDticketObjects4= [];
+gdjs.HomeCode.GDdiscObjects1= [];
+gdjs.HomeCode.GDdiscObjects2= [];
+gdjs.HomeCode.GDdiscObjects3= [];
+gdjs.HomeCode.GDdiscObjects4= [];
 
 
 gdjs.HomeCode.eventsList0 = function(runtimeScene) {
@@ -120,7 +132,7 @@ gdjs.copyArray(runtimeScene.getObjects("bentornato"), gdjs.HomeCode.GDbentornato
 }
 
 
-};gdjs.HomeCode.asyncCallback16194604 = function (runtimeScene, asyncObjectsList) {
+};gdjs.HomeCode.asyncCallback16745084 = function (runtimeScene, asyncObjectsList) {
 }
 gdjs.HomeCode.eventsList1 = function(runtimeScene) {
 
@@ -130,7 +142,7 @@ gdjs.HomeCode.eventsList1 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.3), (runtimeScene) => (gdjs.HomeCode.asyncCallback16194604(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.3), (runtimeScene) => (gdjs.HomeCode.asyncCallback16745084(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -236,7 +248,7 @@ gdjs.HomeCode.eventsList3(runtimeScene, asyncObjectsList);} //End of subevents
 }
 
 
-};gdjs.HomeCode.asyncCallback16213588 = function (runtimeScene, asyncObjectsList) {
+};gdjs.HomeCode.asyncCallback16770604 = function (runtimeScene, asyncObjectsList) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Gioco", true);
 }
 { //Subevents
@@ -250,7 +262,7 @@ gdjs.HomeCode.eventsList5 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.8), (runtimeScene) => (gdjs.HomeCode.asyncCallback16213588(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.8), (runtimeScene) => (gdjs.HomeCode.asyncCallback16770604(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -409,8 +421,12 @@ if (isConditionTrue_0) {
 let isConditionTrue_0 = false;
 {
 gdjs.copyArray(runtimeScene.getObjects("PurpleSpace"), gdjs.HomeCode.GDPurpleSpaceObjects1);
+gdjs.copyArray(runtimeScene.getObjects("disc"), gdjs.HomeCode.GDdiscObjects1);
 {for(var i = 0, len = gdjs.HomeCode.GDPurpleSpaceObjects1.length ;i < len;++i) {
     gdjs.HomeCode.GDPurpleSpaceObjects1[i].setYOffset(gdjs.HomeCode.GDPurpleSpaceObjects1[i].getYOffset() - (5));
+}
+}{for(var i = 0, len = gdjs.HomeCode.GDdiscObjects1.length ;i < len;++i) {
+    gdjs.HomeCode.GDdiscObjects1[i].rotate(45, runtimeScene);
 }
 }}
 
@@ -430,7 +446,6 @@ gdjs.copyArray(runtimeScene.getObjects("NewTextInput"), gdjs.HomeCode.GDNewTextI
 gdjs.copyArray(runtimeScene.getObjects("bentornato"), gdjs.HomeCode.GDbentornatoObjects1);
 gdjs.copyArray(runtimeScene.getObjects("cambia"), gdjs.HomeCode.GDcambiaObjects1);
 gdjs.copyArray(runtimeScene.getObjects("istruzioni"), gdjs.HomeCode.GDistruzioniObjects1);
-gdjs.copyArray(runtimeScene.getObjects("ticket"), gdjs.HomeCode.GDticketObjects1);
 {firebase.analytics();
 }{for(var i = 0, len = gdjs.HomeCode.GDNewTextInputObjects1.length ;i < len;++i) {
     gdjs.HomeCode.GDNewTextInputObjects1[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2);
@@ -447,13 +462,13 @@ gdjs.copyArray(runtimeScene.getObjects("ticket"), gdjs.HomeCode.GDticketObjects1
 }{for(var i = 0, len = gdjs.HomeCode.GDGIOCAObjects1.length ;i < len;++i) {
     gdjs.HomeCode.GDGIOCAObjects1[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2);
 }
-}{for(var i = 0, len = gdjs.HomeCode.GDticketObjects1.length ;i < len;++i) {
-    gdjs.HomeCode.GDticketObjects1[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2);
-}
 }{for(var i = 0, len = gdjs.HomeCode.GDLOGOObjects1.length ;i < len;++i) {
     gdjs.HomeCode.GDLOGOObjects1[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2);
 }
 }{gdjs.evtsExt__Iframe__Create.func(runtimeScene, "classifica", "/BladeInvaders/endgame.html", 400, 260, 0, 380, false, false, "", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{gdjs.evtTools.sound.preloadMusic(runtimeScene, "Lucas campagna - LML (Francesco Zeta Remix) [TT01].mp3");
+}{gdjs.evtTools.sound.preloadSound(runtimeScene, "shoot02wav-14562.mp3");
+}{gdjs.evtTools.sound.preloadSound(runtimeScene, "mixkit-arcade-game-explosion-2759.wav");
 }}
 
 }
@@ -519,6 +534,14 @@ gdjs.HomeCode.GDistruzioniObjects1.length = 0;
 gdjs.HomeCode.GDistruzioniObjects2.length = 0;
 gdjs.HomeCode.GDistruzioniObjects3.length = 0;
 gdjs.HomeCode.GDistruzioniObjects4.length = 0;
+gdjs.HomeCode.GDmusicObjects1.length = 0;
+gdjs.HomeCode.GDmusicObjects2.length = 0;
+gdjs.HomeCode.GDmusicObjects3.length = 0;
+gdjs.HomeCode.GDmusicObjects4.length = 0;
+gdjs.HomeCode.GDlucasObjects1.length = 0;
+gdjs.HomeCode.GDlucasObjects2.length = 0;
+gdjs.HomeCode.GDlucasObjects3.length = 0;
+gdjs.HomeCode.GDlucasObjects4.length = 0;
 gdjs.HomeCode.GDbentornatoObjects1.length = 0;
 gdjs.HomeCode.GDbentornatoObjects2.length = 0;
 gdjs.HomeCode.GDbentornatoObjects3.length = 0;
@@ -539,6 +562,10 @@ gdjs.HomeCode.GDticketObjects1.length = 0;
 gdjs.HomeCode.GDticketObjects2.length = 0;
 gdjs.HomeCode.GDticketObjects3.length = 0;
 gdjs.HomeCode.GDticketObjects4.length = 0;
+gdjs.HomeCode.GDdiscObjects1.length = 0;
+gdjs.HomeCode.GDdiscObjects2.length = 0;
+gdjs.HomeCode.GDdiscObjects3.length = 0;
+gdjs.HomeCode.GDdiscObjects4.length = 0;
 
 gdjs.HomeCode.eventsList8(runtimeScene);
 
