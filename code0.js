@@ -7030,7 +7030,6 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.GiocoCode.GDPlayerObjects1);
 gdjs.copyArray(runtimeScene.getObjects("RedFlatBar"), gdjs.GiocoCode.GDRedFlatBarObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Satellite"), gdjs.GiocoCode.GDSatelliteObjects1);
 gdjs.copyArray(runtimeScene.getObjects("power_attivo"), gdjs.GiocoCode.GDpower_95attivoObjects1);
@@ -7046,9 +7045,6 @@ gdjs.copyArray(runtimeScene.getObjects("power_attivo"), gdjs.GiocoCode.GDpower_9
 }{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "powerups");
 }{for(var i = 0, len = gdjs.GiocoCode.GDRedFlatBarObjects1.length ;i < len;++i) {
     gdjs.GiocoCode.GDRedFlatBarObjects1[i].hide();
-}
-}{for(var i = 0, len = gdjs.GiocoCode.GDPlayerObjects1.length ;i < len;++i) {
-    gdjs.GiocoCode.GDPlayerObjects1[i].getBehavior("FireBullet").SetCooldownOp(gdjs.GiocoCode.GDPlayerObjects1[i].getBehavior("FireBullet").Cooldown((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) - (gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(2)) - 1), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
 }{runtimeScene.getScene().getVariables().get("bonusboss").setNumber(0);
 }{gdjs.evtTools.sound.playMusicOnChannel(runtimeScene, "Lucas campagna - LML (Francesco Zeta Remix) [TT01].mp3", 1, true, 75, 1);
