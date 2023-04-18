@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__InputValidation__IsOnlyLetters !== "undefined") {
 gdjs.evtsExt__InputValidation__IsOnlyLetters = {};
 
 
-gdjs.evtsExt__InputValidation__IsOnlyLetters.userFunc0xd2a070 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__InputValidation__IsOnlyLetters.userFunc0xfe05e8 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const lrt = eventsFunctionContext.getArgument("lrt");
 const n = /^[a-zA-Z\s]*$/;
@@ -20,7 +20,7 @@ gdjs.evtsExt__InputValidation__IsOnlyLetters.eventsList0 = function(runtimeScene
 {
 
 
-gdjs.evtsExt__InputValidation__IsOnlyLetters.userFunc0xd2a070(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__InputValidation__IsOnlyLetters.userFunc0xfe05e8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

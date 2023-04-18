@@ -27,6 +27,10 @@ gdjs.HomeCode.GDcambiaObjects1= [];
 gdjs.HomeCode.GDcambiaObjects2= [];
 gdjs.HomeCode.GDcambiaObjects3= [];
 gdjs.HomeCode.GDcambiaObjects4= [];
+gdjs.HomeCode.GDloadingObjects1= [];
+gdjs.HomeCode.GDloadingObjects2= [];
+gdjs.HomeCode.GDloadingObjects3= [];
+gdjs.HomeCode.GDloadingObjects4= [];
 gdjs.HomeCode.GDGIOCAObjects1= [];
 gdjs.HomeCode.GDGIOCAObjects2= [];
 gdjs.HomeCode.GDGIOCAObjects3= [];
@@ -45,6 +49,7 @@ gdjs.HomeCode.GDdiscObjects3= [];
 gdjs.HomeCode.GDdiscObjects4= [];
 
 
+gdjs.HomeCode.mapOfGDgdjs_46HomeCode_46GDdiscObjects1Objects = Hashtable.newFrom({"disc": gdjs.HomeCode.GDdiscObjects1});
 gdjs.HomeCode.eventsList0 = function(runtimeScene) {
 
 {
@@ -119,7 +124,7 @@ gdjs.copyArray(runtimeScene.getObjects("bentornato"), gdjs.HomeCode.GDbentornato
 {gdjs.evtTools.camera.showLayer(runtimeScene, "esistente");
 }{gdjs.evtTools.camera.hideLayer(runtimeScene, "nuovo utente");
 }{for(var i = 0, len = gdjs.HomeCode.GDbentornatoObjects1.length ;i < len;++i) {
-    gdjs.HomeCode.GDbentornatoObjects1[i].setBBText("[color=red]" + "[outline=black]" + "[align=center]" + "[b]" + "Bentornato " + "[color=black]" + "[outline=red]" + gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().getFromIndex(1)) + "[/color]" + "[/outline]" + "." + "[/align]" + "[align=center]" + gdjs.evtTools.string.newLine() + "[b]" + "Il tuo record è " + "[color=black]" + "[outline=red]" + gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(2))) + "[/color]" + "[/outline]" + "[color=red]" + "[outline=black]" + "." + "[/b]" + "[/align]" + "[/outline]" + "[/color]");
+    gdjs.HomeCode.GDbentornatoObjects1[i].setBBText("[color=red]" + "[outline=black]" + "[align=center]" + "[b]" + "Ciao, " + "[color=black]" + "[outline=red]" + gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().getFromIndex(1)) + "[/color]" + "[/outline]" + "." + "[/align]" + "[align=center]" + gdjs.evtTools.string.newLine() + "[b]" + "Il tuo record è " + "[color=black]" + "[outline=red]" + gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(2))) + "[/color]" + "[/outline]" + "[color=red]" + "[outline=black]" + "." + "[/b]" + "[/align]" + "[/outline]" + "[/color]");
 }
 }{for(var i = 0, len = gdjs.HomeCode.GDbentornatoObjects1.length ;i < len;++i) {
     gdjs.HomeCode.GDbentornatoObjects1[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2);
@@ -132,7 +137,7 @@ gdjs.copyArray(runtimeScene.getObjects("bentornato"), gdjs.HomeCode.GDbentornato
 }
 
 
-};gdjs.HomeCode.asyncCallback16795652 = function (runtimeScene, asyncObjectsList) {
+};gdjs.HomeCode.asyncCallback8459836 = function (runtimeScene, asyncObjectsList) {
 }
 gdjs.HomeCode.eventsList1 = function(runtimeScene) {
 
@@ -142,7 +147,7 @@ gdjs.HomeCode.eventsList1 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.3), (runtimeScene) => (gdjs.HomeCode.asyncCallback16795652(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.4), (runtimeScene) => (gdjs.HomeCode.asyncCallback8459836(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -248,7 +253,7 @@ gdjs.HomeCode.eventsList3(runtimeScene, asyncObjectsList);} //End of subevents
 }
 
 
-};gdjs.HomeCode.asyncCallback16829204 = function (runtimeScene, asyncObjectsList) {
+};gdjs.HomeCode.asyncCallback8465148 = function (runtimeScene, asyncObjectsList) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Gioco", true);
 }
 { //Subevents
@@ -262,7 +267,7 @@ gdjs.HomeCode.eventsList5 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.8), (runtimeScene) => (gdjs.HomeCode.asyncCallback16829204(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.8), (runtimeScene) => (gdjs.HomeCode.asyncCallback8465148(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -438,6 +443,44 @@ gdjs.copyArray(runtimeScene.getObjects("disc"), gdjs.HomeCode.GDdiscObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
+{isConditionTrue_0 = (gdjs.evtTools.window.getWindowInnerHeight() > gdjs.evtTools.window.getWindowInnerWidth());
+}
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(8442676);
+}
+}
+if (isConditionTrue_0) {
+{gdjs.evtsExt__Iframe__Create.func(runtimeScene, "classifica", "/BladeInvaders/endgame.html", 400, 260, 0, 380, false, false, "", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (gdjs.evtTools.window.getWindowInnerHeight() < gdjs.evtTools.window.getWindowInnerWidth());
+}
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(8444732);
+}
+}
+if (isConditionTrue_0) {
+{gdjs.evtsExt__Iframe__Delete.func(runtimeScene, "classifica", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("GIOCA"), gdjs.HomeCode.GDGIOCAObjects1);
@@ -465,7 +508,6 @@ gdjs.copyArray(runtimeScene.getObjects("istruzioni"), gdjs.HomeCode.GDistruzioni
 }{for(var i = 0, len = gdjs.HomeCode.GDLOGOObjects1.length ;i < len;++i) {
     gdjs.HomeCode.GDLOGOObjects1[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2);
 }
-}{gdjs.evtsExt__Iframe__Create.func(runtimeScene, "classifica", "/BladeInvaders/endgame.html", 400, 260, 0, 380, false, false, "", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }{gdjs.evtTools.sound.preloadMusic(runtimeScene, "Lucas campagna - LML (Francesco Zeta Remix) [TT01].mp3");
 }{gdjs.evtTools.sound.preloadSound(runtimeScene, "shoot02wav-14562.mp3");
 }{gdjs.evtTools.sound.preloadSound(runtimeScene, "mixkit-arcade-game-explosion-2759.wav");
@@ -491,6 +533,24 @@ gdjs.HomeCode.GDticketObjects1.length = k;
 if (isConditionTrue_0) {
 {gdjs.evtTools.firebaseTools.analytics.log("click su ticket", "");
 }{gdjs.evtsExt__URLTools__Redirect.func(runtimeScene, "https://www.eventbrite.it/e/608671311277", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("disc"), gdjs.HomeCode.GDdiscObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.HomeCode.mapOfGDgdjs_46HomeCode_46GDdiscObjects1Objects, runtimeScene, true, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.firebaseTools.analytics.log("click su lucas", "");
 }}
 
 }
@@ -550,6 +610,10 @@ gdjs.HomeCode.GDcambiaObjects1.length = 0;
 gdjs.HomeCode.GDcambiaObjects2.length = 0;
 gdjs.HomeCode.GDcambiaObjects3.length = 0;
 gdjs.HomeCode.GDcambiaObjects4.length = 0;
+gdjs.HomeCode.GDloadingObjects1.length = 0;
+gdjs.HomeCode.GDloadingObjects2.length = 0;
+gdjs.HomeCode.GDloadingObjects3.length = 0;
+gdjs.HomeCode.GDloadingObjects4.length = 0;
 gdjs.HomeCode.GDGIOCAObjects1.length = 0;
 gdjs.HomeCode.GDGIOCAObjects2.length = 0;
 gdjs.HomeCode.GDGIOCAObjects3.length = 0;
