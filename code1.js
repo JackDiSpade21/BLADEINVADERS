@@ -137,7 +137,7 @@ gdjs.copyArray(runtimeScene.getObjects("bentornato"), gdjs.HomeCode.GDbentornato
 }
 
 
-};gdjs.HomeCode.asyncCallback8459836 = function (runtimeScene, asyncObjectsList) {
+};gdjs.HomeCode.asyncCallback16397580 = function (runtimeScene, asyncObjectsList) {
 }
 gdjs.HomeCode.eventsList1 = function(runtimeScene) {
 
@@ -147,7 +147,7 @@ gdjs.HomeCode.eventsList1 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.4), (runtimeScene) => (gdjs.HomeCode.asyncCallback8459836(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.4), (runtimeScene) => (gdjs.HomeCode.asyncCallback16397580(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -253,7 +253,7 @@ gdjs.HomeCode.eventsList3(runtimeScene, asyncObjectsList);} //End of subevents
 }
 
 
-};gdjs.HomeCode.asyncCallback8465148 = function (runtimeScene, asyncObjectsList) {
+};gdjs.HomeCode.asyncCallback16401236 = function (runtimeScene, asyncObjectsList) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Gioco", true);
 }
 { //Subevents
@@ -267,7 +267,7 @@ gdjs.HomeCode.eventsList5 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.8), (runtimeScene) => (gdjs.HomeCode.asyncCallback8465148(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.8), (runtimeScene) => (gdjs.HomeCode.asyncCallback16401236(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -447,7 +447,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(8442676);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16373596);
 }
 }
 if (isConditionTrue_0) {
@@ -466,7 +466,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(8444732);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16375652);
 }
 }
 if (isConditionTrue_0) {
@@ -508,9 +508,6 @@ gdjs.copyArray(runtimeScene.getObjects("istruzioni"), gdjs.HomeCode.GDistruzioni
 }{for(var i = 0, len = gdjs.HomeCode.GDLOGOObjects1.length ;i < len;++i) {
     gdjs.HomeCode.GDLOGOObjects1[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2);
 }
-}{gdjs.evtTools.sound.preloadMusic(runtimeScene, "Lucas campagna - LML (Francesco Zeta Remix) [TT01].mp3");
-}{gdjs.evtTools.sound.preloadSound(runtimeScene, "shoot02wav-14562.mp3");
-}{gdjs.evtTools.sound.preloadSound(runtimeScene, "mixkit-arcade-game-explosion-2759.wav");
 }}
 
 }
@@ -551,6 +548,7 @@ isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.firebaseTools.analytics.log("click su lucas", "");
+}{gdjs.evtsExt__URLTools__Redirect.func(runtimeScene, "https://open.spotify.com/track/3H7iEx2ekFcNoErMFSzEp1?si=e765b89eb591445d", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }}
 
 }
