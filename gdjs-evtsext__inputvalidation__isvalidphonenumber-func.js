@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__InputValidation__IsValidPhoneNumber !== "undefined") {
 gdjs.evtsExt__InputValidation__IsValidPhoneNumber = {};
 
 
-gdjs.evtsExt__InputValidation__IsValidPhoneNumber.userFunc0xb6cc08 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__InputValidation__IsValidPhoneNumber.userFunc0x1168e48 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const phone = eventsFunctionContext.getArgument("phone");
 const n = /[0-9 -()+]+$/;
@@ -20,7 +20,7 @@ gdjs.evtsExt__InputValidation__IsValidPhoneNumber.eventsList0 = function(runtime
 {
 
 
-gdjs.evtsExt__InputValidation__IsValidPhoneNumber.userFunc0xb6cc08(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__InputValidation__IsValidPhoneNumber.userFunc0x1168e48(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
