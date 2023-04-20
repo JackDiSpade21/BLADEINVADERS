@@ -594,7 +594,8 @@ for (var i = 0, k = 0, l = gdjs.HomeCode.GDWinnersObjects1.length;i<l;++i) {
 }
 gdjs.HomeCode.GDWinnersObjects1.length = k;
 if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Fine", true);
+{gdjs.evtsExt__Iframe__Delete.func(runtimeScene, "classifica", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Fine", true);
 }}
 
 }
