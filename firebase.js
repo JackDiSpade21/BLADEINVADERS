@@ -22,7 +22,7 @@ var app = firebase.initializeApp(firebaseConfig);
 
 const analytics = firebase.analytics();
 
-db.collection("players").orderBy("score", "desc").limit(5)
+db.collection("finale").orderBy("score", "desc").limit(5)
 .get()
 .then(querySnapshot=>{
         querySnapshot.forEach(doc=>{
