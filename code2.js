@@ -154,7 +154,7 @@ gdjs.FineCode.GDPRIMOObjects1.length = k;
 }
 }
 if (isConditionTrue_0) {
-{gdjs.evtsExt__URLTools__Redirect.func(runtimeScene, "https://www.instagram.com/damiano.mercia/", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+{gdjs.evtsExt__URLTools__Redirect.func(runtimeScene, "https://www.instagram.com/letipappalardo_/", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }}
 
 }
@@ -251,7 +251,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("descr"), gdjs.FineCode.GDdescrObjects2);
 {for(var i = 0, len = gdjs.FineCode.GDdescrObjects2.length ;i < len;++i) {
-    gdjs.FineCode.GDdescrObjects2[i].setBBText("[b]" + "[color=black]" + "[outline=red]" + "Avete distrutto più di " + "[/outline]" + "[/color]" + "[color=red]" + "[outline=black]" + "90.000" + "[/outline]" + "[/color]" + "[color=black]" + "[outline=red]" + " nemici!" + gdjs.evtTools.string.newLine() + gdjs.evtTools.string.newLine() + "E siete morti solo " + "[/outline]" + "[/color]" + "[color=red]" + "[outline=black]" + "650 " + "[/outline]" + "[/color]" + "[color=black]" + "[outline=red]" + "volte!" + "[/outline]" + "[/color]" + "[/b]");
+    gdjs.FineCode.GDdescrObjects2[i].setBBText("[b]" + "[color=black]" + "[outline=red]" + "Avete distrutto più di " + "[/outline]" + "[/color]" + "[color=red]" + "[outline=black]" + "115.000" + "[/outline]" + "[/color]" + "[color=black]" + "[outline=red]" + " nemici!" + gdjs.evtTools.string.newLine() + gdjs.evtTools.string.newLine() + "E siete morti solo " + "[/outline]" + "[/color]" + "[color=red]" + "[outline=black]" + "750 " + "[/outline]" + "[/color]" + "[color=black]" + "[outline=red]" + "volte!" + "[/outline]" + "[/color]" + "[/b]");
 }
 }}
 
@@ -272,7 +272,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("descr"), gdjs.FineCode.GDdescrObjects2);
 {for(var i = 0, len = gdjs.FineCode.GDdescrObjects2.length ;i < len;++i) {
-    gdjs.FineCode.GDdescrObjects2[i].setBBText("[b]" + "[color=black]" + "[outline=red]" + "Avete raccolto più di " + "[/outline]" + "[/color]" + "[color=red]" + "[outline=black]" + "2300" + "[/outline]" + "[/color]" + "[color=black]" + "[outline=red]" + " powerups!" + gdjs.evtTools.string.newLine() + gdjs.evtTools.string.newLine() + "E ben " + "[/outline]" + "[/color]" + "[color=red]" + "[outline=black]" + "700" + "[/outline]" + "[/color]" + "[color=black]" + "[outline=red]" + " satelliti!" + "[/outline]" + "[/color]" + "[/b]");
+    gdjs.FineCode.GDdescrObjects2[i].setBBText("[b]" + "[color=black]" + "[outline=red]" + "Avete raccolto più di " + "[/outline]" + "[/color]" + "[color=red]" + "[outline=black]" + "2600" + "[/outline]" + "[/color]" + "[color=black]" + "[outline=red]" + " powerups!" + gdjs.evtTools.string.newLine() + gdjs.evtTools.string.newLine() + "E ben " + "[/outline]" + "[/color]" + "[color=red]" + "[outline=black]" + "850" + "[/outline]" + "[/color]" + "[color=black]" + "[outline=red]" + " satelliti!" + "[/outline]" + "[/color]" + "[/b]");
 }
 }}
 
@@ -293,7 +293,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("descr"), gdjs.FineCode.GDdescrObjects2);
 {for(var i = 0, len = gdjs.FineCode.GDdescrObjects2.length ;i < len;++i) {
-    gdjs.FineCode.GDdescrObjects2[i].setBBText("[b]" + "[color=black]" + "[outline=red]" + "Avete giocato più di " + "[/outline]" + "[/color]" + "[color=red]" + "[outline=black]" + "1000" + "[/outline]" + "[/color]" + "[color=black]" + "[outline=red]" + " partite!" + gdjs.evtTools.string.newLine() + gdjs.evtTools.string.newLine() + "E dopo avete abbandonato ben " + "[/outline]" + "[/color]" + "[color=red]" + "[outline=black]" + "250" + "[/outline]" + "[/color]" + "[color=black]" + "[outline=red]" + " volte!" + "[/outline]" + "[/color]" + "[/b]");
+    gdjs.FineCode.GDdescrObjects2[i].setBBText("[b]" + "[color=black]" + "[outline=red]" + "Avete giocato più di " + "[/outline]" + "[/color]" + "[color=red]" + "[outline=black]" + "1000" + "[/outline]" + "[/color]" + "[color=black]" + "[outline=red]" + " partite!" + gdjs.evtTools.string.newLine() + gdjs.evtTools.string.newLine() + "E avete rinunciato ben " + "[/outline]" + "[/color]" + "[color=red]" + "[outline=black]" + "300" + "[/outline]" + "[/color]" + "[color=black]" + "[outline=red]" + " volte!" + "[/outline]" + "[/color]" + "[/b]");
 }
 }}
 
@@ -314,7 +314,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("descr"), gdjs.FineCode.GDdescrObjects2);
 {for(var i = 0, len = gdjs.FineCode.GDdescrObjects2.length ;i < len;++i) {
-    gdjs.FineCode.GDdescrObjects2[i].setBBText("[b]" + "[color=black]" + "[outline=red]" + "Avete cliccato più volte sul " + "[/outline]" + "[/color]" + "[color=red]" + "[outline=black]" + "disco di Lucas" + "[/outline]" + "[/color]" + "[color=black]" + "[outline=red]" + " che sul " + "[color=red]" + "[outline=black]" + "ticket di Satellite!" + "[/outline]" + "[/color]" + "[color=black]" + "[outline=red]" + "" + "[/outline]" + "[/color]" + "[/b]");
+    gdjs.FineCode.GDdescrObjects2[i].setBBText("[b]" + "[color=black]" + "[outline=red]" + "Avete giocato in più di " + "[/outline]" + "[/color]" + "[color=red]" + "[outline=black]" + "200" + "[/outline]" + "[/color]" + "[color=black]" + "[outline=red]" + "! Con " + "[color=red]" + "[outline=black]" + "100 di voi attivi ogni giorno!" + "[/outline]" + "[/color]" + "[color=black]" + "[outline=red]" + "" + "[/outline]" + "[/color]" + "[/b]");
 }
 }}
 
@@ -336,7 +336,7 @@ if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("descr"), gdjs.FineCode.GDdescrObjects1);
 {gdjs.evtTools.runtimeScene.removeTimer(runtimeScene, "tick");
 }{for(var i = 0, len = gdjs.FineCode.GDdescrObjects1.length ;i < len;++i) {
-    gdjs.FineCode.GDdescrObjects1[i].setBBText("[b]" + "[color=black]" + "[outline=red]" + "Grazie per avere giocato, ci vediamo " + "[color=red]" + "[outline=black]" + "la prossima volta" + "[/outline]" + "[/color]" + "[color=black]" + "[outline=red]" + "!" + "[/outline]" + "[/color]" + "[/b]");
+    gdjs.FineCode.GDdescrObjects1[i].setBBText("[b]" + "[color=black]" + "[outline=red]" + "Grazie per avere giocato, ci vediamo " + "[color=red]" + "[outline=black]" + "questa sera" + "[/outline]" + "[/color]" + "[color=black]" + "[outline=red]" + "!" + "[/outline]" + "[/color]" + "[/b]");
 }
 }}
 
